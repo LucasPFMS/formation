@@ -22,7 +22,7 @@ public class Formation {
     public String getDescription() { return description; }
     public int getTime() { return time; }
     public double getPrice() {return price;}
-    public String gettype() { return type; }
+    public String getType() { return type; }
 
     @Override
     public String toString() {
