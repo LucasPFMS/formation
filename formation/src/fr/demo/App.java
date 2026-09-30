@@ -24,9 +24,14 @@ public class App {
         for (Formation formation : formations.listFormations()) {
         	if (formation.getDescription().contains(my_formation)){
         		System.out.println(formation);
+        	}	
+        }
+        System.out.println("quelle type de formation voulez-vous recherchez (présentiel/distentiel) ?");
+        String type_my_formation = sc.nextLine();
+        for (Formation formation : formations.listFormations()) {
+        	if (formation.getType() == type_my_formation){
+        		System.out.println(formation);
         	}
-            	
-        	
         }
   
         formations.closeConnection();
